@@ -58,5 +58,4 @@ rm mr-coxall_checks.xml
 
 sudo rm - R ~/dotfiles
 
-sudo reboot now
-
+sudo reboot now,
