@@ -22,3 +22,16 @@ ssh-keygen -t ed25519 -C "Jackson.naufal@mths.ca"
 ssh-add ~/.ssh/id_ed25519
 cat ~/.ssh/id_ed25519.pub
 ssh -T git@github.com
+
+
+sudo apt install tree
+
+sudo apt-get install -y ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen
+git clone https://github.com/neovim/neovim
+cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+
+cd ..
+
+~/.bashrc
+cp ~/dotfiles/.bashrc ~/.bashrc
