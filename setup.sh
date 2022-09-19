@@ -35,3 +35,28 @@ cd ..
 
 ~/.bashrc
 cp ~/dotfiles/.bashrc ~/.bashrc
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+export NVM_DIR="HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "NVM_DIR/bash_completion"
+
+nvm install node --lst
+nvm install-latest-npm
+
+sudo apt install default-jdk -y
+mkdir ~/scripts
+cp ~/dotfiles/java-lint.sh ~/scripts/java-lint.sh
+sudo chmod + x ~/scripts/java-lint.sh
+
+wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.3.3/checkstyle-10.3.3-all.jar
+cp ./checkstyle-10.3.3-all.jar ~/scripts/checkstyle.jar
+wget https://raw.githubusercontent.com/Mr-Coxall/dot_files/main/mr-coxall_checks.xml
+cp ./mr-coxall_checks.xml ~/scripts/
+rm checkstyle-10.3.3-all.jar
+rm mr-coxall_checks.xml
+
+sudo rm - R ~/dotfiles
+
+sudo reboot now
+
