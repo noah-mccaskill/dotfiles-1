@@ -3,7 +3,7 @@
 # sudo apt update
 # sudo apt install -y git
 
-# git clone https://github.com/JacksonNaufal/dotfiles.git
+# git clone https://github.com/noah-mccaskill/dotfiles.git
 # cd ./dotfiles && sh ./setup.sh
 #
 # update and upgrade system
@@ -82,8 +82,8 @@ mkdir ~/ICS4U/Unit3/Unit3-04
 mkdir ~/ICS4U/Unit3/Unit3-05
 
 # Configure Git
-git config --global user.email "Jackson.naufal@mths.ca"
-git config --global user.name "Jackson-Naufal"
+git config --global user.email "noah.mccaskill@mths.ca"
+git config --global user.name "Noah-McCaskill"
 git config --global init.defaultBranch main
 git config --global pull.rebase true
 git config --global fetch.prune true
@@ -91,7 +91,7 @@ git config --global fetch.prune true
 # Setup GitHub SSH keys
 echo "---------------------"
 echo "Press RETURN 3 times."
-ssh-keygen -t ed25519 -C "Jackson.naufal@mths.ca"
+ssh-keygen -t ed25519 -C "noah.mccaskill@mths.ca"
 ssh-add ~/.ssh/id_ed25519
 echo ""
 cat ~/.ssh/id_ed25519.pub
